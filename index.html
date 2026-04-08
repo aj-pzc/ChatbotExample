@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chatbot</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class='botContainer'>
+            <div class='botContainer__header'>
+                <h3>Chatbot</h3>
+                <button id="clearButton">
+                    <img src="reset.svg" alt="Boton de Reset"/>
+                </button>
+            </div>
+            <div class='botContainer__chat' id="chatBox">
+                <div class='botContainer__chat-botContainer' id="emptyMessage">
+                    <p class='botContainer__chat-botEmptyMessage'>
+                        Digita algo para iniciar la conversación.
+                    </p>
+                </div>
+            </div>
+            <div class='botContainer__input'>
+                <input type="text" id="userInput" placeholder="Escribe tu pregunta aquí...">
+                <button id="sendButton">Enviar</button>
+                
+            </div>           
+        </div>
+    </body>
+</html>
